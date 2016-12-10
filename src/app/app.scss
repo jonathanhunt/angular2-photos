@@ -1,0 +1,22 @@
+@import "modules/photos/photos.component";
+
+.app__inner-wrapper{
+  margin: 0 auto;
+  width: 1000px;
+  background: white;
+  padding: 0px;
+  height: 100%;
+  display: table;
+}
+
+.button{
+  color: white;
+  padding: 10px;
+  background: red;
+  text-align: center;
+  width: 200px;
+  height: 80px;
+  margin: 0px auto;
+  cursor: pointer;
+  font-family: $font;
+}

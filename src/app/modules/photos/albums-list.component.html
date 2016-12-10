@@ -1,0 +1,19 @@
+<h2>Photos</h2>
+
+<div class="albums-list">
+  <div id="loading"></div>
+  <ul id="albumsGrid">
+    <li *ngFor="let album of albums">
+      <div class="photosetImage">
+        <a title="{{album.description}}" href="albums/{{album.id}}"><img src="{{album.photoUrl}}" alt="{{album.title}}" /></a>
+      </div>
+			<div class="photoset-info">
+        <a title="{{album.title}}" href="albums/{{album.id}}">{{album.title}}</a><br />
+			  {{album.photoCount}} photos
+      </div>
+    </li>
+    <li >
+  </ul>
+  <ul id="photosetsPager" class="pagerButtons">
+  </ul>
+</div>
