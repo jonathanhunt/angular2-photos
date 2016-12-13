@@ -38,7 +38,6 @@ type StoreType = {
   declarations: [
     AppComponent,
     AboutComponent,
-    //PhotosListComponent,
     NoContentComponent
   ],
   imports: [ // import Angular's modules

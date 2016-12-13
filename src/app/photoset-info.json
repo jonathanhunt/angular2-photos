@@ -1,0 +1,28 @@
+{
+  "photoset": {
+    "id": "72157672055007611",
+    "owner": "53353745@N00",
+    "username": "jdhunt",
+    "primary": "29191526941",
+    "secret": "d02d451939",
+    "server": "8382",
+    "farm": 9,
+    "photos": 62,
+    "count_views": "24",
+    "count_comments": "0",
+    "count_photos": "62",
+    "count_videos": 0,
+    "title": {
+      "_content": "New England and Canada, 2016"
+    },
+    "description": {
+      "_content": ""
+    },
+    "can_comment": 0,
+    "date_create": "1472314075",
+    "date_update": "1472474419",
+    "coverphoto_server": "0",
+    "coverphoto_farm": 0
+  },
+  "stat": "ok"
+}

@@ -1,0 +1,66 @@
+/* Variable files here */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+#albumsGrid {
+  padding: 0;
+  margin: 0; }
+
+.albumImage {
+  border-radius: 6px;
+  height: 160px;
+  width: 240px;
+  overflow: hidden; }
+
+.album-info {
+  width: 240px;
+  overflow: hidden; }
+
+#albumsGrid img {
+  opacity: .7;
+  max-width: 240px; }
+
+#albumsGrid img:hover {
+  opacity: 1;
+  cursor: pointer; }
+
+#albumsGrid li {
+  float: left;
+  display: block;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  height: 195px;
+  font-size: .75em;
+  overflow: hidden; }
+
+#albumsGrid .album-info {
+  font-weight: bold;
+  color: #000; }
+
+.app__inner-wrapper {
+  margin: 0 auto;
+  width: 1000px;
+  background: white;
+  padding: 0px;
+  height: 100%;
+  display: table; }
+
+.button {
+  color: white;
+  padding: 10px;
+  background: red;
+  text-align: center;
+  width: 200px;
+  height: 80px;
+  margin: 0px auto;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Target the ie9  and above*/
+/* Target stuff for ie9 and media queries*/
+
+/*# sourceMappingURL=stylesheet.css.map */
