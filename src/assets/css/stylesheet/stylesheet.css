@@ -1,24 +1,16 @@
 /* Variable files here */
-/* Photosets page */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
-.albums-list:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-#loading {
-  display: none;
-  background-image: url(images/loading.gif);
-  background-repeat: no-repeat;
-  background-position: center; }
-
 #albumsGrid {
   padding: 0;
   margin: 0; }
 
-.photosetImage {
+.albumImage {
   border-radius: 6px;
   height: 160px;
+  width: 240px;
+  overflow: hidden; }
+
+.album-info {
   width: 240px;
   overflow: hidden; }
 
@@ -27,177 +19,22 @@
   max-width: 240px; }
 
 #albumsGrid img:hover {
-  opacity: 1; }
+  opacity: 1;
+  cursor: pointer; }
 
 #albumsGrid li {
   float: left;
   display: block;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-bottom: 15px;
   padding-bottom: 20px;
   height: 195px;
   font-size: .75em;
   overflow: hidden; }
 
-#albumsGrid .photoset-info {
+#albumsGrid .album-info {
   font-weight: bold;
   color: #000; }
-
-#photosetsPager {
-  float: left; }
-
-ul.pagerButtons li span.active em {
-  background-color: #ccc; }
-
-ul.pagerButtons {
-  font-size: 10px;
-  line-height: 16px;
-  padding-left: 0; }
-
-ul.pagerButtons li {
-  float: left;
-  display: inline;
-  margin: 0 4px 0 0;
-  height: 20px; }
-
-ul.pagerButtons li {
-  text-align: center; }
-
-ul.pagerButtons li a, ul.pagerButtons li em {
-  display: block;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  height: 16px;
-  background-repeat: no-repeat;
-  color: #000 !important;
-  white-space: nowrap;
-  text-decoration: none;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
-
-ul.pagerButtons li span.ellipsis {
-  display: block;
-  white-space: nowrap;
-  text-decoration: none;
-  font-size: larger;
-  font-weight: bold;
-  vertical-align: bottom; }
-
-ul.pagerButtons li a, ul.pagerButtons li em {
-  padding: 2px 4px;
-  background-color: #fff; }
-
-ul.pagerButtons li a.active {
-  background-color: #ccc; }
-
-ul.pagerButtons li a:hover, ul.pagerButtons li a:focus {
-  color: #000;
-  background-color: #B6C9A5;
-  text-decoration: none; }
-
-ul.pagerButtons li em {
-  font-style: normal; }
-
-ul.pagerButtons li.ellipsis {
-  border: 0;
-  color: red; }
-
-/* Photoset and search submenu */
-#submenu {
-  padding-bottom: 10px;
-  font-weight: bold; }
-
-#submenu a:link, #submenu a:visited {
-  text-decoration: none; }
-
-#photosetTitle {
-  padding-left: 10px; }
-
-#slideshow {
-  position: absolute;
-  right: 10px;
-  top: 237px;
-  font-size: 1.1em; }
-
-.searchTerm {
-  font-style: italic; }
-
-#slide {
-  float: right; }
-
-/* Photoset page */
-#photoset:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.thumbsSide {
-  float: left;
-  height: 500px;
-  overflow-y: scroll;
-  overflow-x: hidden; }
-
-.thumbsTop {
-  height: 100px;
-  margin-bottom: 10px;
-  white-space: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden; }
-
-.photosetThumbs img {
-  /*margin: 1px 1px 2px 1px;*/ }
-
-.photosetThumbs img:hover {
-  cursor: pointer;
-  opacity: 1; }
-
-.notSelected {
-  opacity: 0.4; }
-
-.photoRight {
-  float: right;
-  padding-left: 20px; }
-
-#photosetMain {
-  max-width: 640px;
-  font-size: .9em; }
-
-#photoMetadata {
-  font-size: .8em;
-  font-weight: bold;
-  color: #999;
-  line-height: 25px;
-  vertical-align: middle; }
-
-#photoCounter {
-  float: left; }
-
-#dateTaken {
-  float: right;
-  text-align: right; }
-
-#prevButton, #nextButton {
-  float: left;
-  width: 25px;
-  height: 25px;
-  text-indent: -9999px; }
-
-#prevButton {
-  background: url(images/controls2.png) no-repeat -75px 0px; }
-
-#prevButton:hover {
-  background-position: -75px -25px;
-  cursor: pointer; }
-
-#nextButton {
-  background: url(images/controls2.png) no-repeat -50px 0px; }
-
-#nextButton:hover {
-  background-position: -50px -25px;
-  cursor: pointer; }
-
-#photoTitle {
-  margin: 30px 0 0 0;
-  color: #666; }
 
 .app__inner-wrapper {
   margin: 0 auto;
