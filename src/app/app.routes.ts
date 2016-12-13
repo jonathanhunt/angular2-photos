@@ -11,6 +11,6 @@ export const ROUTES: Routes = [
   { path: '',      component: AlbumsListComponent },
   { path: 'about', component: AboutComponent },
   { path: 'photos', component: AlbumsListComponent },
-  { path: 'albums', component: AlbumComponent },
+  { path: 'albums/:id', component: AlbumComponent },
   { path: '**',    component: NoContentComponent },
 ];

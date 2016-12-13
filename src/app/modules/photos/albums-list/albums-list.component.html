@@ -4,10 +4,10 @@
   <ul id="albumsGrid">
     <li *ngFor="let album of albums">
       <div class="albumImage">
-        <a title="{{album.description}}" href="albums/{{album.id}}"><img src="{{album.photoUrl}}" alt="{{album.title}}" /></a>
+        <a title="{{album.description}}" routerLink="/albums/{{album.id}}"><img src="{{album.photoUrl}}" alt="{{album.title}}" /></a>
       </div>
 			<div class="album-info">
-        <a href="albums/{{album.id}}">{{album.title}}</a><br />
+        <a title="{{album.title}}" routerLink="/albums/{{album.id}}">{{album.title}}</a><br />
 			  <span>{{album.photoCount}} photos</span>
       </div>
     </li>
