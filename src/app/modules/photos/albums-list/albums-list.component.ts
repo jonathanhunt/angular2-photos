@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import { PhotosService } from '../services/photos.service';
 import { AlbumsList } from '../models/albums-list.data';

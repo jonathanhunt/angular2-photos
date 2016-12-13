@@ -54,6 +54,10 @@ npm-debug.log
 /.awcache
 .webpack.json
 
+# SASS #
+**/.sass-cache
+**/.sass-cache/*
+
 # Doc #
 /doc/
 

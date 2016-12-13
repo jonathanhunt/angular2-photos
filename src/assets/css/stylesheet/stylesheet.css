@@ -1,5 +1,5 @@
-/* Variable files here */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+/* Variable files here */
 #albumsGrid {
   padding: 0;
   margin: 0; }
@@ -62,5 +62,3 @@
 
 /* Target the ie9  and above*/
 /* Target stuff for ie9 and media queries*/
-
-/*# sourceMappingURL=stylesheet.css.map */
