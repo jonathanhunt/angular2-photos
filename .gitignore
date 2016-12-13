@@ -4,6 +4,13 @@
 logs
 *.log
 
+#ignore sass file
+/.sass-cache
+
+#ignore stylesheet css
+#stylesheet.css
+#stylesheet.css.map
+
 # Runtime data
 pids
 *.pid
@@ -53,10 +60,6 @@ npm-debug.log
 /dist/**
 /.awcache
 .webpack.json
-
-# SASS #
-**/.sass-cache
-**/.sass-cache/*
 
 # Doc #
 /doc/
