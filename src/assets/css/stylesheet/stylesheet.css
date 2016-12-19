@@ -1,36 +1,52 @@
-/* Variable files here */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+/* Variable files here */
+ul {
+  float: left;
+  width: 100%;
+  padding: 0;
+  list-style-type: none; }
+
+li {
+  float: left;
+  width: 25%;
+  padding: 0;
+  margin: 0;
+  border: 10px solid #fff;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+li a {
+  display: block;
+  width: 100%;
+  overflow: hidden; }
+
+h3 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  color: #fff; }
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  border-radius: 6px;
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out; }
+
 #albumsGrid {
   padding: 0;
   margin: 0; }
-
-.albumImage {
-  border-radius: 6px;
-  height: 160px;
-  width: 240px;
-  overflow: hidden; }
 
 .album-info {
   width: 240px;
   overflow: hidden; }
 
-#albumsGrid img {
-  opacity: .7;
-  max-width: 240px; }
-
 #albumsGrid img:hover {
   opacity: 1;
   cursor: pointer; }
-
-#albumsGrid li {
-  float: left;
-  display: block;
-  margin-right: 20px;
-  margin-bottom: 15px;
-  padding-bottom: 20px;
-  height: 195px;
-  font-size: .75em;
-  overflow: hidden; }
 
 #albumsGrid .album-info {
   font-weight: bold;
@@ -62,5 +78,3 @@
 
 /* Target the ie9  and above*/
 /* Target stuff for ie9 and media queries*/
-
-/*# sourceMappingURL=stylesheet.css.map */

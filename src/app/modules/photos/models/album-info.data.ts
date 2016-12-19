@@ -12,6 +12,6 @@ export class AlbumInfo {
     this.title = photoset.title._content;
     this.description = photoset.description._content;
     this.photoCount = photoset.photos;
-    this.photoUrl = FlickrUtility.getSmallPhotoUrl(photoset);
+    this.photoUrl = FlickrUtility.getSmall320PhotoUrl(photoset);
   }
 }

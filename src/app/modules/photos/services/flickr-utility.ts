@@ -17,9 +17,9 @@ export class FlickrUtility {
   	return FlickrUtility.getPhotoUrl(photoset, 'm');
   }
 
-  // getSmall320PhotoUrl(photoset) {
-  // 	return this.getPhotoUrl(photoset, 'n');
-  // }
+  static getSmall320PhotoUrl(photoset) {
+  	return FlickrUtility.getPhotoUrl(photoset, 'n');
+  }
 
   static getMediumPhotoUrl(photoset) {
   	return FlickrUtility.getPhotoUrl(photoset, '');
