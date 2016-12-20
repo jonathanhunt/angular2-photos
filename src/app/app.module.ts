@@ -15,7 +15,6 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
-import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 
 // Application wide providers
@@ -37,7 +36,6 @@ type StoreType = {
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
-    AboutComponent,
     NoContentComponent
   ],
   imports: [ // import Angular's modules

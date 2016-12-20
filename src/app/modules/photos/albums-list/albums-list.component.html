@@ -1,25 +1,10 @@
-<h2>Photos</h2>
+<h1>Photos</h1>
 
-<!-- <div class="albums-list">
-  <ul id="albumsGrid">
-    <li *ngFor="let album of albums">
-      <img src="{{album.photoUrl}}" alt="{{album.title}}" />
-    </li>
-    <!-- <li *ngFor="let album of albums">
-      <div class="albumImage">
-        <a title="{{album.description}}" routerLink="/albums/{{album.id}}"><img src="{{album.photoUrl}}" alt="{{album.title}}" /></a>
-      </div>
-			<div class="album-info">
-        <a title="{{album.title}}" routerLink="/albums/{{album.id}}">{{album.title}}</a><br />
-			  <span>{{album.photoCount}} photos</span>
-      </div>
-    </li> -->
-  <!--</ul>
-</div> -->
-
-<ul>
-  <li class="blah" *ngFor="let album of albums">
-    <a title="{{album.description}}" routerLink="/albums/{{album.id}}"><img src="{{album.photoUrl}}" alt="{{album.title}}" /></a>
-    <h3>{{album.title}}</h3>
-  </li>
+<ul class="album-list three-col">
+	<li *ngFor="let album of albums">
+		<a routerLink="/albums/{{album.id}}">
+			<img src="{{album.photoUrl}}" alt="{{album.title}}" title="{{album.title}}" />
+		</a>
+					<span>{{album.title}}</span>
+	</li>
 </ul>

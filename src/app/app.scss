@@ -1,22 +1,23 @@
 @import "modules/photos/albums-list/albums-list.component";
 
-.app__inner-wrapper{
-  margin: 0 auto;
-  width: 1000px;
-  background: white;
-  padding: 0px;
-  height: 100%;
-  display: table;
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Helvetica Neue', arial, sans-serif;
+  padding: 20px;
+	// font-size: 100%;
 }
 
-.button{
-  color: white;
-  padding: 10px;
-  background: red;
-  text-align: center;
-  width: 200px;
-  height: 80px;
-  margin: 0px auto;
-  cursor: pointer;
-  font-family: $font;
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	margin: 0 0 20px;
+	text-align: center;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #bbb;
+}
+
+a:-webkit-any-link{
+	text-decoration:none !important;
 }

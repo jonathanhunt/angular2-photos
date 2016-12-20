@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Photos</title>
+
+  <style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 200;
+  padding: 20px;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	margin: 0 0 20px;
+	text-align: center;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #bbb;
+}
+
+/* ----- Image grids ----- */
+ul.album-list {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2%; /* should match li left margin */
+}
+ul.album-list li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2% 2%;
+	/*background: #fff;
+	border: 1px solid #ddd;*/
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	/*box-shadow: 0 0 5px #ddd;*/
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+ul.album-list li img {
+	max-width: 100%;
+	height: auto;
+  border-radius: 6px;
+	/*margin: 0 0 10px;*/
+}
+ul.album-list li h3 {
+	margin: 0 0 5px;
+}
+ul.album-list li span {
+  display: block;
+  margin: 0;
+  text-align: left;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  bottom: 3em;
+  /*text-shadow: 1px 1px 1px #000;*/
+  height: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.125em;
+  text-shadow: 0 1px 1px #000;
+  line-height: 20px;
+  word-break: break-word;
+  margin: 0;
+}
+ul.album-list li p {
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #999;
+}
+/* class for 2 columns */
+ul.album-list.columns-2 li {
+	width: 48%; /* this value + 2 should = 50% */
+}
+/* class for 3 columns */
+ul.album-list.columns-3 li {
+	width: 31%; /* this value + 2 should = 33% */
+}
+/* class for 4 columns */
+ul.album-list.columns-4 li {
+	width: 23%; /* this value + 2 should = 25% */
+}
+
+@media (max-width: 1199px) {
+	.container {
+		width: auto;
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 1024px) {
+  /* 3 columns */
+  ul.album-list li {
+    width: 31% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* 2 columns */
+  ul.album-list li {
+    width: 48% !important;
+  }
+}
+
+@media (max-width: 480px) {
+	ul.album-list {
+		margin-left: 0;
+	}
+	ul.album-list li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+}
+</style>
+
+</head>
+
+
+<body>
+
+  <h1>Photos</h1>
+
+  <ul class="album-list columns-3">
+    <li>
+		<a ng-reflect-router-link="/albums/72157672055007611" ng-reflect-href="#/albums/72157672055007611" href="#/albums/72157672055007611">
+			<img ng-reflect-src="http://farm9.static.flickr.com/8382/29191526941_d02d451939_n.jpg" src="http://farm9.static.flickr.com/8382/29191526941_d02d451939_n.jpg" ng-reflect-alt="New England and Canada, 2016" alt="New England and Canada, 2016" ng-reflect-title="New England and Canada, 2016" title="New England and Canada, 2016">
+		</a>
+					<span>New England and Canada, 2016</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157644816842404" ng-reflect-href="#/albums/72157644816842404" href="#/albums/72157644816842404">
+			<img ng-reflect-src="http://farm4.static.flickr.com/3809/14275244133_42aaae4fdd_n.jpg" src="http://farm4.static.flickr.com/3809/14275244133_42aaae4fdd_n.jpg" ng-reflect-alt="Walt Disney World" alt="Walt Disney World" ng-reflect-title="Walt Disney World" title="Walt Disney World">
+		</a>
+					<span>Walt Disney World</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157629288607771" ng-reflect-href="#/albums/72157629288607771" href="#/albums/72157629288607771">
+			<img ng-reflect-src="http://farm8.static.flickr.com/7204/6862790021_8620c92bdf_n.jpg" src="http://farm8.static.flickr.com/7204/6862790021_8620c92bdf_n.jpg" ng-reflect-alt="Winter" alt="Winter" ng-reflect-title="Winter" title="Winter">
+		</a>
+					<span>Winter</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157622512346433" ng-reflect-href="#/albums/72157622512346433" href="#/albums/72157622512346433">
+			<img ng-reflect-src="http://farm3.static.flickr.com/2674/4033206081_f31fd445c6_n.jpg" src="http://farm3.static.flickr.com/2674/4033206081_f31fd445c6_n.jpg" ng-reflect-alt="Cincinnati Nature Center" alt="Cincinnati Nature Center" ng-reflect-title="Cincinnati Nature Center" title="Cincinnati Nature Center">
+		</a>
+					<span>Cincinnati Nature Center</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594438641415" ng-reflect-href="#/albums/72157594438641415" href="#/albums/72157594438641415">
+			<img ng-reflect-src="http://farm3.static.flickr.com/2298/1720444370_b0c97828d2_n.jpg" src="http://farm3.static.flickr.com/2298/1720444370_b0c97828d2_n.jpg" ng-reflect-alt="Red River Gorge" alt="Red River Gorge" ng-reflect-title="Red River Gorge" title="Red River Gorge">
+		</a>
+					<span>Red River Gorge</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157637032401214" ng-reflect-href="#/albums/72157637032401214" href="#/albums/72157637032401214">
+			<img ng-reflect-src="http://farm4.static.flickr.com/3791/10528208453_5a0fac528b_n.jpg" src="http://farm4.static.flickr.com/3791/10528208453_5a0fac528b_n.jpg" ng-reflect-alt="Louisville Zoo" alt="Louisville Zoo" ng-reflect-title="Louisville Zoo" title="Louisville Zoo">
+		</a>
+					<span>Louisville Zoo</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157632530917509" ng-reflect-href="#/albums/72157632530917509" href="#/albums/72157632530917509">
+			<img ng-reflect-src="http://farm8.static.flickr.com/7112/6916851610_1f578c1967_n.jpg" src="http://farm8.static.flickr.com/7112/6916851610_1f578c1967_n.jpg" ng-reflect-alt="Cincinnati Zoo" alt="Cincinnati Zoo" ng-reflect-title="Cincinnati Zoo" title="Cincinnati Zoo">
+		</a>
+					<span>Cincinnati Zoo</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157634257550000" ng-reflect-href="#/albums/72157634257550000" href="#/albums/72157634257550000">
+			<img ng-reflect-src="http://farm6.static.flickr.com/5464/9102851215_e70e10828c_n.jpg" src="http://farm6.static.flickr.com/5464/9102851215_e70e10828c_n.jpg" ng-reflect-alt="Badlands, Yellowstone, Grand Tetons Trip" alt="Badlands, Yellowstone, Grand Tetons Trip" ng-reflect-title="Badlands, Yellowstone, Grand Tetons Trip" title="Badlands, Yellowstone, Grand Tetons Trip">
+		</a>
+					<span>Badlands, Yellowstone, Grand Tetons Trip</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157633384199940" ng-reflect-href="#/albums/72157633384199940" href="#/albums/72157633384199940">
+			<img ng-reflect-src="http://farm9.static.flickr.com/8254/8695028748_2105d45cca_n.jpg" src="http://farm9.static.flickr.com/8254/8695028748_2105d45cca_n.jpg" ng-reflect-alt="Butterflies of Morocco" alt="Butterflies of Morocco" ng-reflect-title="Butterflies of Morocco" title="Butterflies of Morocco">
+		</a>
+					<span>Butterflies of Morocco</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157623757815116" ng-reflect-href="#/albums/72157623757815116" href="#/albums/72157623757815116">
+			<img ng-reflect-src="http://farm6.static.flickr.com/5022/5691715625_b3681ee748_n.jpg" src="http://farm6.static.flickr.com/5022/5691715625_b3681ee748_n.jpg" ng-reflect-alt="Wildlife" alt="Wildlife" ng-reflect-title="Wildlife" title="Wildlife">
+		</a>
+					<span>Wildlife</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157632570652871" ng-reflect-href="#/albums/72157632570652871" href="#/albums/72157632570652871">
+			<img ng-reflect-src="http://farm9.static.flickr.com/8357/8400073091_cb30c25b44_n.jpg" src="http://farm9.static.flickr.com/8357/8400073091_cb30c25b44_n.jpg" ng-reflect-alt="CodeMash 2013" alt="CodeMash 2013" ng-reflect-title="CodeMash 2013" title="CodeMash 2013">
+		</a>
+					<span>CodeMash 2013</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157634183982729" ng-reflect-href="#/albums/72157634183982729" href="#/albums/72157634183982729">
+			<img ng-reflect-src="http://farm8.static.flickr.com/7225/7331800620_d5561e2fa7_n.jpg" src="http://farm8.static.flickr.com/7225/7331800620_d5561e2fa7_n.jpg" ng-reflect-alt="Flowers" alt="Flowers" ng-reflect-title="Flowers" title="Flowers">
+		</a>
+					<span>Flowers</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157629720465315" ng-reflect-href="#/albums/72157629720465315" href="#/albums/72157629720465315">
+			<img ng-reflect-src="http://farm8.static.flickr.com/7226/6891340642_cefe7dbb75_n.jpg" src="http://farm8.static.flickr.com/7226/6891340642_cefe7dbb75_n.jpg" ng-reflect-alt="London, 2012" alt="London, 2012" ng-reflect-title="London, 2012" title="London, 2012">
+		</a>
+					<span>London, 2012</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157628869515691" ng-reflect-href="#/albums/72157628869515691" href="#/albums/72157628869515691">
+			<img ng-reflect-src="http://farm8.static.flickr.com/7019/6696805147_bb461d4ca5_n.jpg" src="http://farm8.static.flickr.com/7019/6696805147_bb461d4ca5_n.jpg" ng-reflect-alt="CodeMash 2012" alt="CodeMash 2012" ng-reflect-title="CodeMash 2012" title="CodeMash 2012">
+		</a>
+					<span>CodeMash 2012</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157625597245283" ng-reflect-href="#/albums/72157625597245283" href="#/albums/72157625597245283">
+			<img ng-reflect-src="http://farm6.static.flickr.com/5289/5313706376_d6acb85b0a_n.jpg" src="http://farm6.static.flickr.com/5289/5313706376_d6acb85b0a_n.jpg" ng-reflect-alt="Photo of the Day, 2011" alt="Photo of the Day, 2011" ng-reflect-title="Photo of the Day, 2011" title="Photo of the Day, 2011">
+		</a>
+					<span>Photo of the Day, 2011</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157627144823391" ng-reflect-href="#/albums/72157627144823391" href="#/albums/72157627144823391">
+			<img ng-reflect-src="http://farm7.static.flickr.com/6003/5970010177_5540550d94_n.jpg" src="http://farm7.static.flickr.com/6003/5970010177_5540550d94_n.jpg" ng-reflect-alt="Northeastern Trip, 2011" alt="Northeastern Trip, 2011" ng-reflect-title="Northeastern Trip, 2011" title="Northeastern Trip, 2011">
+		</a>
+					<span>Northeastern Trip, 2011</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157626970823121" ng-reflect-href="#/albums/72157626970823121" href="#/albums/72157626970823121">
+			<img ng-reflect-src="http://farm4.static.flickr.com/3249/5705809604_49f1b3a6f8_n.jpg" src="http://farm4.static.flickr.com/3249/5705809604_49f1b3a6f8_n.jpg" ng-reflect-alt="Krohn Conservatory, 2011" alt="Krohn Conservatory, 2011" ng-reflect-title="Krohn Conservatory, 2011" title="Krohn Conservatory, 2011">
+		</a>
+					<span>Krohn Conservatory, 2011</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157626357768658" ng-reflect-href="#/albums/72157626357768658" href="#/albums/72157626357768658">
+			<img ng-reflect-src="http://farm6.static.flickr.com/5107/5561368505_b7492bda13_n.jpg" src="http://farm6.static.flickr.com/5107/5561368505_b7492bda13_n.jpg" ng-reflect-alt="Newport Aquarium, 2011" alt="Newport Aquarium, 2011" ng-reflect-title="Newport Aquarium, 2011" title="Newport Aquarium, 2011">
+		</a>
+					<span>Newport Aquarium, 2011</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157625154734237" ng-reflect-href="#/albums/72157625154734237" href="#/albums/72157625154734237">
+			<img ng-reflect-src="http://farm2.static.flickr.com/1373/5131252235_2d35fee972_n.jpg" src="http://farm2.static.flickr.com/1373/5131252235_2d35fee972_n.jpg" ng-reflect-alt="Madison, IN" alt="Madison, IN" ng-reflect-title="Madison, IN" title="Madison, IN">
+		</a>
+					<span>Madison, IN</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157624144701228" ng-reflect-href="#/albums/72157624144701228" href="#/albums/72157624144701228">
+			<img ng-reflect-src="http://farm5.static.flickr.com/4010/4686548651_8a1c1fe52d_n.jpg" src="http://farm5.static.flickr.com/4010/4686548651_8a1c1fe52d_n.jpg" ng-reflect-alt="Upper Midwest Trip" alt="Upper Midwest Trip" ng-reflect-title="Upper Midwest Trip" title="Upper Midwest Trip">
+		</a>
+					<span>Upper Midwest Trip</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157622529271063" ng-reflect-href="#/albums/72157622529271063" href="#/albums/72157622529271063">
+			<img ng-reflect-src="http://farm3.static.flickr.com/2750/4040793774_315be3cdb3_n.jpg" src="http://farm3.static.flickr.com/2750/4040793774_315be3cdb3_n.jpg" ng-reflect-alt="Bengals vs Texans, 2009" alt="Bengals vs Texans, 2009" ng-reflect-title="Bengals vs Texans, 2009" title="Bengals vs Texans, 2009">
+		</a>
+					<span>Bengals vs Texans, 2009</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157622586570282" ng-reflect-href="#/albums/72157622586570282" href="#/albums/72157622586570282">
+			<img ng-reflect-src="http://farm3.static.flickr.com/2735/4024969742_055ed8453c_n.jpg" src="http://farm3.static.flickr.com/2735/4024969742_055ed8453c_n.jpg" ng-reflect-alt="Chicago, 2009" alt="Chicago, 2009" ng-reflect-title="Chicago, 2009" title="Chicago, 2009">
+		</a>
+					<span>Chicago, 2009</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157622461402353" ng-reflect-href="#/albums/72157622461402353" href="#/albums/72157622461402353">
+			<img ng-reflect-src="http://farm3.static.flickr.com/2637/4012394790_07034253a5_n.jpg" src="http://farm3.static.flickr.com/2637/4012394790_07034253a5_n.jpg" ng-reflect-alt="Tippecanoe National Battlefield" alt="Tippecanoe National Battlefield" ng-reflect-title="Tippecanoe National Battlefield" title="Tippecanoe National Battlefield">
+		</a>
+					<span>Tippecanoe National Battlefield</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157622238917060" ng-reflect-href="#/albums/72157622238917060" href="#/albums/72157622238917060">
+			<img ng-reflect-src="http://farm3.static.flickr.com/2603/3886417207_027a54e58d_n.jpg" src="http://farm3.static.flickr.com/2603/3886417207_027a54e58d_n.jpg" ng-reflect-alt="Hopewell Culture National Historical Park" alt="Hopewell Culture National Historical Park" ng-reflect-title="Hopewell Culture National Historical Park" title="Hopewell Culture National Historical Park">
+		</a>
+					<span>Hopewell Culture National Historical Park</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157611527312097" ng-reflect-href="#/albums/72157611527312097" href="#/albums/72157611527312097">
+			<img ng-reflect-src="http://farm4.static.flickr.com/3244/3133596918_df9381076d_n.jpg" src="http://farm4.static.flickr.com/3244/3133596918_df9381076d_n.jpg" ng-reflect-alt="Atlanta, 2008" alt="Atlanta, 2008" ng-reflect-title="Atlanta, 2008" title="Atlanta, 2008">
+		</a>
+					<span>Atlanta, 2008</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157605479567098" ng-reflect-href="#/albums/72157605479567098" href="#/albums/72157605479567098">
+			<img ng-reflect-src="http://farm4.static.flickr.com/3067/2605403735_057abf4d64_n.jpg" src="http://farm4.static.flickr.com/3067/2605403735_057abf4d64_n.jpg" ng-reflect-alt="Washington DC Trip, 2008" alt="Washington DC Trip, 2008" ng-reflect-title="Washington DC Trip, 2008" title="Washington DC Trip, 2008">
+		</a>
+					<span>Washington DC Trip, 2008</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157604234532980" ng-reflect-href="#/albums/72157604234532980" href="#/albums/72157604234532980">
+			<img ng-reflect-src="http://farm3.static.flickr.com/2191/2359274429_55b01ba12b_n.jpg" src="http://farm3.static.flickr.com/2191/2359274429_55b01ba12b_n.jpg" ng-reflect-alt="Snowshoe Mountain ski trip" alt="Snowshoe Mountain ski trip" ng-reflect-title="Snowshoe Mountain ski trip" title="Snowshoe Mountain ski trip">
+		</a>
+					<span>Snowshoe Mountain ski trip</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157603104641129" ng-reflect-href="#/albums/72157603104641129" href="#/albums/72157603104641129">
+			<img ng-reflect-src="http://farm3.static.flickr.com/2253/1977042543_31ea2b6638_n.jpg" src="http://farm3.static.flickr.com/2253/1977042543_31ea2b6638_n.jpg" ng-reflect-alt="Winton Woods" alt="Winton Woods" ng-reflect-title="Winton Woods" title="Winton Woods">
+		</a>
+					<span>Winton Woods</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157601736739055" ng-reflect-href="#/albums/72157601736739055" href="#/albums/72157601736739055">
+			<img ng-reflect-src="http://farm2.static.flickr.com/1136/1262070227_2e5efd80d0_n.jpg" src="http://farm2.static.flickr.com/1136/1262070227_2e5efd80d0_n.jpg" ng-reflect-alt="Red's Game - August 25, 2007" alt="Red's Game - August 25, 2007" ng-reflect-title="Red's Game - August 25, 2007" title="Red's Game - August 25, 2007">
+		</a>
+					<span>Red's Game - August 25, 2007</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157600888152918" ng-reflect-href="#/albums/72157600888152918" href="#/albums/72157600888152918">
+			<img ng-reflect-src="http://farm2.static.flickr.com/1023/901134954_d977501c86_n.jpg" src="http://farm2.static.flickr.com/1023/901134954_d977501c86_n.jpg" ng-reflect-alt="Las Vegas and the Grand Canyon, 2007" alt="Las Vegas and the Grand Canyon, 2007" ng-reflect-title="Las Vegas and the Grand Canyon, 2007" title="Las Vegas and the Grand Canyon, 2007">
+		</a>
+					<span>Las Vegas and the Grand Canyon, 2007</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157600048470063" ng-reflect-href="#/albums/72157600048470063" href="#/albums/72157600048470063">
+			<img ng-reflect-src="http://farm1.static.flickr.com/225/446779132_1b509736c6_n.jpg" src="http://farm1.static.flickr.com/225/446779132_1b509736c6_n.jpg" ng-reflect-alt="Key West, 2007" alt="Key West, 2007" ng-reflect-title="Key West, 2007" title="Key West, 2007">
+		</a>
+					<span>Key West, 2007</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594480109739" ng-reflect-href="#/albums/72157594480109739" href="#/albums/72157594480109739">
+			<img ng-reflect-src="http://farm1.static.flickr.com/148/358446701_94002490f7_n.jpg" src="http://farm1.static.flickr.com/148/358446701_94002490f7_n.jpg" ng-reflect-alt="Honeymoon in Hawaii" alt="Honeymoon in Hawaii" ng-reflect-title="Honeymoon in Hawaii" title="Honeymoon in Hawaii">
+		</a>
+					<span>Honeymoon in Hawaii</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594464128011" ng-reflect-href="#/albums/72157594464128011" href="#/albums/72157594464128011">
+			<img ng-reflect-src="http://farm1.static.flickr.com/132/348488644_70a577f2f6_n.jpg" src="http://farm1.static.flickr.com/132/348488644_70a577f2f6_n.jpg" ng-reflect-alt="Dallas to Indianapolis, 2006" alt="Dallas to Indianapolis, 2006" ng-reflect-title="Dallas to Indianapolis, 2006" title="Dallas to Indianapolis, 2006">
+		</a>
+					<span>Dallas to Indianapolis, 2006</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594463082913" ng-reflect-href="#/albums/72157594463082913" href="#/albums/72157594463082913">
+			<img ng-reflect-src="http://farm1.static.flickr.com/138/347829248_0e167edc67_n.jpg" src="http://farm1.static.flickr.com/138/347829248_0e167edc67_n.jpg" ng-reflect-alt="Milwaukee, 2005" alt="Milwaukee, 2005" ng-reflect-title="Milwaukee, 2005" title="Milwaukee, 2005">
+		</a>
+					<span>Milwaukee, 2005</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594462990620" ng-reflect-href="#/albums/72157594462990620" href="#/albums/72157594462990620">
+			<img ng-reflect-src="http://farm1.static.flickr.com/149/347814114_23164b2c95_n.jpg" src="http://farm1.static.flickr.com/149/347814114_23164b2c95_n.jpg" ng-reflect-alt="Miami trip and cruise" alt="Miami trip and cruise" ng-reflect-title="Miami trip and cruise" title="Miami trip and cruise">
+		</a>
+					<span>Miami trip and cruise</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594452748946" ng-reflect-href="#/albums/72157594452748946" href="#/albums/72157594452748946">
+			<img ng-reflect-src="http://farm1.static.flickr.com/130/341531140_a1afa8e69c_n.jpg" src="http://farm1.static.flickr.com/130/341531140_a1afa8e69c_n.jpg" ng-reflect-alt="Caribbean Cruise, January 2005" alt="Caribbean Cruise, January 2005" ng-reflect-title="Caribbean Cruise, January 2005" title="Caribbean Cruise, January 2005">
+		</a>
+					<span>Caribbean Cruise, January 2005</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594447112628" ng-reflect-href="#/albums/72157594447112628" href="#/albums/72157594447112628">
+			<img ng-reflect-src="http://farm1.static.flickr.com/125/337882108_858a6a4f9c_n.jpg" src="http://farm1.static.flickr.com/125/337882108_858a6a4f9c_n.jpg" ng-reflect-alt="The Grand Canyon and Utah, 2004" alt="The Grand Canyon and Utah, 2004" ng-reflect-title="The Grand Canyon and Utah, 2004" title="The Grand Canyon and Utah, 2004">
+		</a>
+					<span>The Grand Canyon and Utah, 2004</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594446238073" ng-reflect-href="#/albums/72157594446238073" href="#/albums/72157594446238073">
+			<img ng-reflect-src="http://farm1.static.flickr.com/141/337315820_ded9633dd5_n.jpg" src="http://farm1.static.flickr.com/141/337315820_ded9633dd5_n.jpg" ng-reflect-alt="Jacobs Field, 2004" alt="Jacobs Field, 2004" ng-reflect-title="Jacobs Field, 2004" title="Jacobs Field, 2004">
+		</a>
+					<span>Jacobs Field, 2004</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594445531085" ng-reflect-href="#/albums/72157594445531085" href="#/albums/72157594445531085">
+			<img ng-reflect-src="http://farm1.static.flickr.com/125/336882341_1bd8b847dc_n.jpg" src="http://farm1.static.flickr.com/125/336882341_1bd8b847dc_n.jpg" ng-reflect-alt="Last Game at Riverfront" alt="Last Game at Riverfront" ng-reflect-title="Last Game at Riverfront" title="Last Game at Riverfront">
+		</a>
+					<span>Last Game at Riverfront</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594443812990" ng-reflect-href="#/albums/72157594443812990" href="#/albums/72157594443812990">
+			<img ng-reflect-src="http://farm1.static.flickr.com/166/335846735_c38c370fca_n.jpg" src="http://farm1.static.flickr.com/166/335846735_c38c370fca_n.jpg" ng-reflect-alt="Big South Fork, 2002" alt="Big South Fork, 2002" ng-reflect-title="Big South Fork, 2002" title="Big South Fork, 2002">
+		</a>
+					<span>Big South Fork, 2002</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594440032343" ng-reflect-href="#/albums/72157594440032343" href="#/albums/72157594440032343">
+			<img ng-reflect-src="http://farm1.static.flickr.com/128/334330123_a4577a402d_n.jpg" src="http://farm1.static.flickr.com/128/334330123_a4577a402d_n.jpg" ng-reflect-alt="Colorado, 2001" alt="Colorado, 2001" ng-reflect-title="Colorado, 2001" title="Colorado, 2001">
+		</a>
+					<span>Colorado, 2001</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594439277613" ng-reflect-href="#/albums/72157594439277613" href="#/albums/72157594439277613">
+			<img ng-reflect-src="http://farm1.static.flickr.com/159/333893834_26ea1b1452_n.jpg" src="http://farm1.static.flickr.com/159/333893834_26ea1b1452_n.jpg" ng-reflect-alt="Hocking Hills" alt="Hocking Hills" ng-reflect-title="Hocking Hills" title="Hocking Hills">
+		</a>
+					<span>Hocking Hills</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594420856257" ng-reflect-href="#/albums/72157594420856257" href="#/albums/72157594420856257">
+			<img ng-reflect-src="http://farm1.static.flickr.com/142/322716498_23648385cd_n.jpg" src="http://farm1.static.flickr.com/142/322716498_23648385cd_n.jpg" ng-reflect-alt="San Diego, 1999" alt="San Diego, 1999" ng-reflect-title="San Diego, 1999" title="San Diego, 1999">
+		</a>
+					<span>San Diego, 1999</span>
+	</li><li>
+		<a ng-reflect-router-link="/albums/72157594412766959" ng-reflect-href="#/albums/72157594412766959" href="#/albums/72157594412766959">
+			<img ng-reflect-src="http://farm1.static.flickr.com/131/318087423_d4ff08bcc4_n.jpg" src="http://farm1.static.flickr.com/131/318087423_d4ff08bcc4_n.jpg" ng-reflect-alt="Michigan and Canada, 1999" alt="Michigan and Canada, 1999" ng-reflect-title="Michigan and Canada, 1999" title="Michigan and Canada, 1999">
+		</a>
+					<span>Michigan and Canada, 1999</span>
+	</li>
+</ul>
+</body>
+</html>

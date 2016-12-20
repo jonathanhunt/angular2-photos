@@ -28,12 +28,6 @@ import { AppState } from './app.service';
           Photos
         </a>
       </span>
-      |
-      <span>
-        <a [routerLink]=" ['./about'] ">
-          About
-        </a>
-      </span>
     </nav>
 
     <main>

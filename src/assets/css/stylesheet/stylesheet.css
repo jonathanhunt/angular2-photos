@@ -1,75 +1,89 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
 /* Variable files here */
-ul {
-  float: left;
-  width: 100%;
-  padding: 0;
-  list-style-type: none; }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+ul.album-list {
+  list-style: none;
+  font-size: 0px;
+  margin-left: -2%;
+  /* should match li left margin */ }
 
-li {
-  float: left;
-  width: 25%;
-  padding: 0;
-  margin: 0;
-  border: 10px solid #fff;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+ul.album-list li {
+  display: inline-block;
+  margin: 0 0 2% 2%;
+  vertical-align: top;
+  font-size: 1em;
+  position: relative; }
 
-li a {
-  display: block;
-  width: 100%;
-  overflow: hidden; }
-
-h3 {
-  position: absolute;
-  top: 200px;
-  left: 0;
-  width: 100%;
-  color: #fff; }
-
-img {
-  display: block;
+ul.album-list li img {
   max-width: 100%;
-  max-height: 100%;
-  margin: auto;
+  height: auto;
   border-radius: 6px;
-  -webkit-transition: all 2s ease-out;
-  transition: all 2s ease-out; }
+  position: relative; }
 
-#albumsGrid {
-  padding: 0;
-  margin: 0; }
-
-.album-info {
-  width: 240px;
-  overflow: hidden; }
-
-#albumsGrid img:hover {
-  opacity: 1;
-  cursor: pointer; }
-
-#albumsGrid .album-info {
-  font-weight: bold;
-  color: #000; }
-
-.app__inner-wrapper {
-  margin: 0 auto;
-  width: 1000px;
-  background: white;
-  padding: 0px;
-  height: 100%;
-  display: table; }
-
-.button {
-  color: white;
-  padding: 10px;
-  background: red;
-  text-align: center;
-  width: 200px;
-  height: 80px;
-  margin: 0px auto;
+ul.album-list li a:hover {
   cursor: pointer;
-  font-family: "Roboto", sans-serif; }
+  text-decoration: none; }
+
+ul.album-list li span {
+  display: block;
+  margin: 0;
+  text-align: left;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  bottom: 3em;
+  text-shadow: 1px 1px 1px #000;
+  height: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.125em; }
+
+/* class for 3 columns */
+ul.three-col li {
+  width: 31%;
+  /* this value + 2 should = 33% */ }
+
+/* class for 4 columns */
+ul.four-col li {
+  width: 23%;
+  /* this value + 2 should = 25% */ }
+
+@media (max-width: 1199px) {
+  .container {
+    width: auto;
+    padding: 0 10px; } }
+@media (max-width: 1024px) {
+  /* 3 columns */
+  ul.album-list li {
+    width: 30.83% !important; } }
+@media (max-width: 768px) {
+  /* 2 columns */
+  ul.album-list li {
+    width: 47.5% !important; } }
+@media (max-width: 480px) {
+  ul.album-list {
+    margin-left: 0; }
+
+  ul.album-list li {
+    width: 100% !important;
+    /* over-ride all li styles */
+    margin: 0 0 10px; } }
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  padding: 20px; }
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #bbb; }
+
+a:-webkit-any-link {
+  text-decoration: none !important; }
 
 .clearfix:after {
   content: "";
@@ -78,3 +92,5 @@ img {
 
 /* Target the ie9  and above*/
 /* Target stuff for ie9 and media queries*/
+
+/*# sourceMappingURL=stylesheet.css.map */

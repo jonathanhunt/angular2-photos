@@ -5,15 +5,27 @@ import { PhotosConfig } from '../photos.config';
 @Injectable()
 export class FlickrUtility {
 
-  // getSquarePhotoUrl(photoset) {
-  // 	return this.getPhotoUrl(photoset, 's');
-  // }
-  //
-  // getThumbnailPhotoUrl(photoset) {
-  // 	return this.getPhotoUrl(photoset, 't');
-  // }
+  // Sizes from Flickr:
+  // s: Square 75 - 75 x 75
+  // q: Square 150 - 150 x 150
+  // t: Thumbnail - 100 x 66
+  // m: Small 240 - 240 x ?
+  // n: Small 320 - 320 x ?
+  // : Medium 500 - 500 x ?
+  // z: Medium 640 - 640 x ?
+  // c: Medium 800 - 800 x ?
+  // l: Large 1024 - 1024 x ?
+  // h: Large 1600 - 1600 x ?
+  // k: Large 2048 - 2048 x ?
+  // o: Original
 
-  static getSmallPhotoUrl(photoset) {
+  private static availableSizes = new Array('s', 'q', 't', 'm', 'n', 'z', 'c', 'l', 'h', 'k', 'o');
+
+  static getThumbnailPhotoUrl(photoset) {
+  	return FlickrUtility.getPhotoUrl(photoset, 't');
+  }
+
+  static getSmall240PhotoUrl(photoset) {
   	return FlickrUtility.getPhotoUrl(photoset, 'm');
   }
 
@@ -21,31 +33,23 @@ export class FlickrUtility {
   	return FlickrUtility.getPhotoUrl(photoset, 'n');
   }
 
-  static getMediumPhotoUrl(photoset) {
+  static getMedium500PhotoUrl(photoset) {
   	return FlickrUtility.getPhotoUrl(photoset, '');
   }
 
-  // getMedium640PhotoUrl(photoset) {
-  // 	return this.getPhotoUrl(photoset, 'z');
-  // }
-  //
-  // getMedium800PhotoUrl(photoset) {
-  // 	return this.getPhotoUrl(photoset, 'c');
-  // }
-  //
-  // getLargePhotoUrl(photoset) {
-  // 	return this.getPhotoUrl(photoset, 'b');
-  // }
+  static getMedium640PhotoUrl(photoset) {
+  	return FlickrUtility.getPhotoUrl(photoset, 'z');
+  }
 
   static getPhotoUrl(photoset, size) {
     let photoId: string;
     let sizeString: string;
 
-    if (size == 's' || size == 't' || size == 'm' || size == 'n' || size == 'z' || size == 'b' || size == 'c') {
+    if (FlickrUtility.availableSizes.indexOf(size) > -1) {
       sizeString = '_' + size;
     }
     else {
-      // Medium or wrong size specified
+      // Size is invalid or not specified
       sizeString = '';
     }
 
