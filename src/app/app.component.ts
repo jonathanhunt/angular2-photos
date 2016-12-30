@@ -16,20 +16,6 @@ import { AppState } from './app.service';
     './app.component.css'
   ],
   template: `
-    <nav>
-      <span>
-        <a [routerLink]=" ['./'] ">
-          Index
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./photos'] ">
-          Photos
-        </a>
-      </span>
-    </nav>
-
     <main>
       <router-outlet></router-outlet>
     </main>
@@ -40,7 +26,7 @@ import { AppState } from './app.service';
 })
 export class AppComponent {
   angularclassLogo = 'assets/img/angularclass-avatar.png';
-  name = 'Angular 2 Webpack Starter';
+  name = 'Photo Gallery';
   url = 'https://twitter.com/AngularClass';
 
   constructor(
