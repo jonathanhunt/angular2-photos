@@ -13,6 +13,6 @@ export class Album {
     this.title = photoset.title._content;
     this.description = photoset.description._content;
     this.photoCount = photoset.photos;
-    this.photoUrl = FlickrUtility.getMedium640PhotoUrl(photoset);
+    // this.photoUrl = FlickrUtility.getMedium640PhotoUrl(photoset);
   }
 }

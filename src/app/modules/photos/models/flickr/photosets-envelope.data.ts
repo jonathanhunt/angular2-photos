@@ -1,4 +1,4 @@
-export class Envelope<T> {
+export class PhotosetsEnvelope<T> {
   stat: string;
   data: T;
 

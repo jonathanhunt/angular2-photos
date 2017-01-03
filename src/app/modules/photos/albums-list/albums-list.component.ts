@@ -13,7 +13,6 @@ import { AlbumInfo } from '../models/album-info.data';
 })
 
 export class AlbumsListComponent {
-  //albumsList: Observable<AlbumsList>;
   albums: Array<AlbumInfo> = new Array<AlbumInfo>();
 
   constructor (private photosService: PhotosService) {
@@ -23,9 +22,6 @@ export class AlbumsListComponent {
     this.photosService.getPhotosets().subscribe(
       (result) => {
         if (result) {
-          //this.albumsList = new Observable<AlbumsList>();
-
-          //this.albums = this.albumsList.albums;
           this.albums = result.albums;
         }
       },

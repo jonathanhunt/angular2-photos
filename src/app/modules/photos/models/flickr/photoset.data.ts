@@ -1,4 +1,4 @@
-import { ContentItem } from './content-item.data';
+//import { ContentItem } from './content-item.data';
 
 export class Photoset {
   id: string;
@@ -8,8 +8,8 @@ export class Photoset {
   farm: number;
   photos: string;
   videos: string;
-  title: ContentItem;
-  description: ContentItem;
+  title: string;
+  description: string;
   needs_interstitial: number;
   visibility_can_see_set: number;
   count_views: string;
@@ -22,6 +22,7 @@ export class Photoset {
     this.id = photoset.id;
     this.primary = photoset.primary;
     this.secret = photoset.secret;
+    this.server = photoset.server;
     this.farm = photoset.farm;
     this.photos = photoset.photos;
     this.videos = photoset.videos;
@@ -36,26 +37,3 @@ export class Photoset {
     this.date_update = photoset.date_update;
   }
 }
-
-// {
-//   "id": "72157672055007611",
-//   "primary": "29191526941",
-//   "secret": "d02d451939",
-//   "server": "8382",
-//   "farm": 9,
-//   "photos": "62",
-//   "videos": 0,
-//   "title": {
-//     "_content": "New England and Canada, 2016"
-//   },
-//   "description": {
-//     "_content": ""
-//   },
-//   "needs_interstitial": 0,
-//   "visibility_can_see_set": 1,
-//   "count_views": "24",
-//   "count_comments": "0",
-//   "can_comment": 0,
-//   "date_create": "1472314075",
-//   "date_update": "1472474419"
-// }
